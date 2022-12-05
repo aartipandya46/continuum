@@ -1,0 +1,43 @@
+{
+  "author": "Level Access",
+  "name": "access-continuum-react-jest",
+  "version": "5.0.0",
+  "description": "React / Jest + ACCESS Engine",
+  "dependencies": {
+    "react": "16.14.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "7.9.0",
+    "@babel/preset-env": "7.9.5",
+    "@babel/preset-react": "7.9.4",
+    "@babel/runtime-corejs3": "7.9.2",
+    "@continuum/continuum-javascript-professional": "file:./lib/continuum-continuum-javascript-professional-5.0.0.tgz",
+    "babel-jest": "25.4.0",
+    "enzyme": "3.11.0",
+    "enzyme-adapter-react-16": "1.15.2",
+    "jest": "25.4.0",
+    "react-dom": "16.13.1"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "babel": {
+    "presets": [
+      "@babel/env",
+      "@babel/react"
+    ],
+    "plugins": [
+      [
+        "@babel/plugin-transform-runtime",
+        {
+          "corejs": 3
+        }
+      ]
+    ]
+  },
+  "jest": {
+    "verbose": true,
+    "testURL": "http://localhost/",
+    "testTimeout": 30000
+  }
+}
